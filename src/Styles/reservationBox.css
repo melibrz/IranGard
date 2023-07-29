@@ -1,0 +1,35 @@
+.reservation-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px 0px;
+    padding: 3rem 2rem;
+    width: 27%;
+    position: absolute;
+    -webkit-transform: translate(0%, -30%);
+    transform: translate(0%, -30%);
+    left: 8%;
+    bottom: 21%;
+    border-radius: 10px;
+
+}
+
+
+.reservation-cost{
+    display: flex;
+    border-bottom: 1px solid gray;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 1rem;
+}
+
+.add-minus-section{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.add-minus-section img{
+    cursor: pointer;
+}

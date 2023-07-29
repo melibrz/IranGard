@@ -1,0 +1,116 @@
+
+
+.Modal {
+    position: relative;
+    font-family: 'Peyda !important';
+}
+
+.Modal.btn-box button {
+    padding: 2% 10%;
+    min-width: 100px;
+}
+.negative-btn{
+    background: rgb(223, 223, 223);
+    cursor: pointer;
+    min-width: 50px;
+    border-radius: 5px;
+    font-family: 'Peyda !important';
+    padding: 0.5rem;
+    border: none;
+}
+.positive-btn{
+    font-family: 'Peyda !important';
+    background: #26b4fb59;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    min-width: 50px;
+    padding: 0.5rem;
+}
+.positive-btn:hover{
+    background: linear-gradient(90deg, #1a2e468e , #26B3FB );
+}
+.Modal__open-btn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #1A2E46;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.Modal__overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 52%);
+    transition: all 0.3s ease-in-out;
+}
+
+.Modal__content {
+    position: absolute;
+    z-index: 10;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8);
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+    max-width: 500px;
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.Modal__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Peyda !important';
+    margin-bottom: 16px;
+    background: linear-gradient(90deg, #1a2e46 , #26B3FB );
+    padding: 3%;
+    border-radius: 8px 8px 0 0;
+}
+
+.Modal__title {
+    font-size: 18px;
+    margin: 0;
+    color: #000;
+}
+
+.Modal__close-btn {
+    font-size: 18px;
+    color: #000;
+    color: white;
+    background-color: rgb(17, 120, 161);
+    border: none;
+    cursor: pointer;
+    /* font-weight: bold; */
+    padding: 3px 7px;
+    margin: 0;
+}
+
+.Modal__body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0% 3%;
+    width: 100%;
+}
+
+.Modal--open .Modal__overlay {
+    visibility: visible;
+    opacity: 1;
+}
+
+.Modal--open .Modal__content {
+    transform: translate(-50%, -50%) scale(1);
+}

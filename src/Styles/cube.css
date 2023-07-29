@@ -1,0 +1,44 @@
+.cube {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 10s ease-in-out;
+    margin-left: 5%;
+    transform: rotateX(30deg) rotateY(30deg);
+  }
+  
+  .cube:hover {
+    transform: rotateX(360deg) rotateY(360deg) scale(1.3);
+  }
+  
+  .cube div {
+    position: absolute;
+    width: 280px;
+    height: 300px;
+  }
+  
+  .front {
+    transform: translateZ(160px);
+  }
+  
+  .back {
+    transform: translateZ(-160px) rotateY(180deg);
+  }
+  
+  .top {
+    transform: rotateX(90deg) translateZ(160px);
+  }
+  
+  .bottom {
+    transform: rotateX(-90deg) translateZ(160px);
+  }
+  
+  .left {
+    transform: rotateY(-90deg) translateZ(160px);
+  }
+  
+  .right {
+    transform: rotateY(90deg) translateZ(160px);
+  }
+  

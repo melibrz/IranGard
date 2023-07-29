@@ -1,0 +1,40 @@
+
+.left-arrow {
+  position: absolute;
+  z-index: 100;
+  font-size: 18px;
+  color: #555754;
+  top: 45%;
+  left: -10px;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 2em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+
+
+.left-arrow:hover {
+  color: #4fc3f7;
+}
+
+.right-arrow {
+  position: absolute;
+  z-index: 100;
+  font-size: 18px;
+  color: #555754;
+  top: 45%;
+  right: -10px;
+  background: #fff;
+  width: 35px;
+  height: 35px;
+  border-radius: 2em;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.right-arrow:hover {
+  color: #4fc3f7;
+}

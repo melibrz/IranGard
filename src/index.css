@@ -1,0 +1,54 @@
+
+@font-face {
+  font-family: "Peyda !important";
+  src: url("./Components/Fonts/Peyda/Peyda-Regular.ttf") format('truetype'),
+    url("./Components/Fonts/Peyda/PeydaWeb/woff/PeydaWeb-Regular.woff") format('woff'),
+    url("./Components/Fonts/Peyda/PeydaWeb/woff2/PeydaWeb-Regular.woff2") format('woff2');
+}
+
+body {
+  direction: rtl;
+  margin: 0;
+  position: relative;
+  padding: 0;
+  width: 100%;
+  font-family: 'Peyda !important';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+
+/* scroll bar style */
+/* width */
+::-webkit-scrollbar {
+  width: 0;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #D9D9D9;
+}
+@keyframes beat {
+  0% {
+    transform: scale(1) rotate(-45deg);
+  }
+  50% {
+    transform: scale(0.9) rotate(-45deg);
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  body {
+    display: none;
+  }
+}
+
